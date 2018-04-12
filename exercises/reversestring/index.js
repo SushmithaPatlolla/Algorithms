@@ -12,6 +12,7 @@ return str.split('').reduce((reversed, character)=>{
 }, '')
 }
 
+
 // function reverse(str) {
 //     var m='';
 //     for(let i of str){
