@@ -14,6 +14,22 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+    const midpoint = Math.floor((2 * n - 1) / 2)
+    for(i=0; i<n; i++){
+        const pyramid1 = ""
+        for(j=0; j<2 * n - 1; j++)  {
+            if(midpoint - i <= j && midpoint + i >= j){
+                pyramid1 += '#'
+            }
+            else{
+                pyramid1 += ' '
+            }
+
+    }
+    console.log(pyramid1)
+    }
+
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 module.exports = pyramid;
