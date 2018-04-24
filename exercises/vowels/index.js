@@ -7,6 +7,16 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+function vowels(str) {
+    var string1 = str.replace('/[^\w]/g','').split('')
+    var string='';
+    for(i=0;i<string1.length;i++){
+        if(string1[i]=='a' || string1[i]=='e' || string1[i]=='i' || string1[i]=='o' || string1[i]=='u' ){
+            string += string1[i];
+        }
+    }
+   return string.length
+
+}
 
 module.exports = vowels;
